@@ -16,6 +16,7 @@ HOST = config['Database']['HOST']
 DATABASE = config['Database']['DATABASE']
 USER = config['Database']['USER']
 PASSWORD = config['Database']['PASSWORD']
+TABLE = config['Database']['TABLE']
 
 def run():
     # Инициализация логирования
@@ -45,7 +46,8 @@ def run():
             host=HOST,
             database=DATABASE,
             user=USER,
-            password=PASSWORD
+            password=PASSWORD,
+            table=TABLE
         )
         db_connector.load_to_database(processed_data)
         logging.info('Данные успешно загружены в базу')

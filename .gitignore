@@ -1,10 +1,6 @@
-# === Python general ===
 __pycache__/
-*.pyc
 
-# === Virtual environment ===
 venv/
 
-# === Configuration and credentials ===
 config.ini.i
 *.json
