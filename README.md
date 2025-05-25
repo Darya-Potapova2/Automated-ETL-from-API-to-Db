@@ -88,7 +88,7 @@ pip install -r requirements.txt
 - days_to_keep - количество дней, для которых сохраняются логи
 
 ### Шаг 4. Создание таблицы в базе данных
-Перед запуском необходимо создать таблицу в базе PostgreSQL. Пример SQL-запроса:
+Перед запуском необходимо создать таблицу. Пример SQL-запроса:
 ```sql
 CREATE TABLE your_table (
     id SERIAL NOT NULL PRIMARY KEY,
@@ -121,7 +121,7 @@ python scripts/run.py
 ### Результаты
 После запуска:
 
-**Данные сохраняются в PostgreSQL**
+**Данные сохраняются в базе данных**
 
 <img src="./images/db.png" alt="Скриншот из базы данных" width="800"/>
 
